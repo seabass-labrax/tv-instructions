@@ -1,17 +1,19 @@
 % SPDX-License-Identifier: CC-BY-4.0
 % SPDX-FileCopyrightText: 2021 Sebastian Crane <seabass-labrax@gmx.com>
 
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{nopageno}
 \usepackage{multicol}
+\usepackage{xcolor}
 \usepackage{geometry}
+\usepackage[none]{hyphenat}
 \usepackage{titlesec}
 \date{December 2021}
 
 \geometry {
   paper=a4paper,
   top=1cm,
-  bottom=2cm,
+  bottom=0cm,
   left=1cm,
   right=1cm,
 }
@@ -20,58 +22,62 @@
 \begin{document}
 
 \setlength{\columnseprule}{0.4pt}
+\setlength{\baselineskip}{40pt}
+\setlength{\parindent}{0pt}
 
 {\centering{\LARGE TV Instructions\par}}
-\begin{multicols*}{2}
+\begin{minipage}[t][0.42\textheight]{0.48\linewidth}
+\section{To watch a DVD}
+\begin{enumerate}
+\item Ensure that neither the XBOX POWER CABLE nor the VIDEO POWER CABLE are plugged in to the wall socket.
+\item Ensure that the MULTI-WAY POWER CABLE is plugged into the wall socket.
+\item Turn on the wall socket for the MULTI-WAY POWER CABLE.
+\item Press the power button on the TV REMOTE.
+\item Press the power button on the DVD REMOTE.
+\item Using the TV REMOTE, set the volume to about a third.
+\item If you do not see a picture, press the AV button on the TV REMOTE.
+\item Using the DVD REMOTE, set the volume to full.
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[t][0.42\textheight]{0.48\linewidth}
+\section{To play the PlayStation}
+\begin{enumerate}
+\item Ensure that neither the XBOX POWER CABLE nor the VIDEO POWER CABLE are plugged in to the wall socket.
+\item Ensure that the MULTI-WAY POWER CABLE is plugged into the wall socket.
+\item Turn on the wall socket for the MULTI-WAY POWER CABLE.
+\item Press the power button on the TV REMOTE.
+\item Press the power button on the top of the PlayStation.
+\item Using the TV REMOTE, set the volume to about a third.
+\item If you do not see a picture, press the AV button on the TV REMOTE.
+\end{enumerate}
+\end{minipage}
 
-  \section{To watch a DVD}
-  \begin{enumerate}
-  \item Ensure that neither the XBOX POWER CABLE nor the VIDEO POWER CABLE are plugged in to the wall socket.
-  \item Ensure that the MULTI-WAY POWER CABLE is plugged into the wall socket.
-  \item Turn on the wall socket for the MULTI-WAY POWER CABLE.
-  \item Press the power button on the TV REMOTE.
-  \item Press the power button on the DVD REMOTE.
-  \item Using the TV REMOTE, set the volume to about a third.
-  \item If you do not see a picture, press the AV button on the TV REMOTE.
-  \item Using the DVD REMOTE, set the volume to full.
-  \end{enumerate}
+\begin{minipage}[t][0.49\textheight]{0.48\linewidth}
+\section{To play the Xbox}
+\begin{enumerate}
+\item Ensure that the VIDEO POWER CABLE is not plugged into the wall socket.
+\item Ensure that the MULTI-WAY POWER CABLE and the XBOX POWER CABLE are plugged into the wall socket.
+\item Turn on the wall socket for both the MULTI-WAY POWER CABLE and the XBOX POWER CABLE.
+\item Press the power power button on the TV REMOTE.
+\item Plug the XBOX VIDEO CABLE into the back of the Xbox.
+\item Press the power button on the front of the Xbox.
+\item Using the TV REMOTE, set the volume to about a third.
+\item If you do not see a picture, press the AV button on the TV REMOTE.
+\item After use, remove the XBOX VIDEO CABLE from the back of the Xbox.
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[t][0.49\textheight]{0.48\linewidth}
+\section{To watch a video}
+\begin{enumerate}
+\item Ensure that the XBOX POWER CABLE is not plugged into the wall socket.
+\item Ensure that the MULTI-WAY POWER CABLE and the VIDEO POWER CABLE are plugged into the wall socket.
+\item Turn on the wall socket for both the MULTI-WAY POWER CABLE and the VIDEO POWER CABLE.
+\item Press the power power button on the TV REMOTE.
+\item Press the power button on the VIDEO REMOTE.
+\item Using the TV REMOTE, set the volume to about a third.
+\item If you do not see a picture but you can hear audio, press the TV/VIDEO button on the VIDEO REMOTE.
+\item If you do not see a picture and you cannot hear audio, press the AV button on the TV REMOTE.
+\end{enumerate}
+\end{minipage}
 
-  \section{To watch a video}
-  \begin{enumerate}
-  \item Ensure that the XBOX POWER CABLE is not plugged into the wall socket.
-  \item Ensure that the MULTI-WAY POWER CABLE and the VIDEO POWER CABLE are plugged into the wall socket.
-  \item Turn on the wall socket for both the MULTI-WAY POWER CABLE and the VIDEO POWER CABLE.
-  \item Press the power power button on the TV REMOTE.
-  \item Press the power button on the VIDEO REMOTE.
-  \item Using the TV REMOTE, set the volume to about a third.
-  \item If you do not see a picture but you can hear audio, press the TV/VIDEO button on the VIDEO REMOTE.
-  \item If you do not see a picture and you cannot hear audio, press the AV button on the TV REMOTE.
-  \end{enumerate}
-
-  \vfill\null \columnbreak
-
-  \section{To play the Xbox}
-  \begin{enumerate}
-  \item Ensure that the VIDEO POWER CABLE is not plugged into the wall socket.
-  \item Ensure that the MULTI-WAY POWER CABLE and the XBOX POWER CABLE are plugged into the wall socket.
-  \item Turn on the wall socket for both the MULTI-WAY POWER CABLE and the XBOX POWER CABLE.
-  \item Press the power power button on the TV REMOTE.
-  \item Plug the XBOX VIDEO CABLE into the back of the Xbox.
-  \item Press the power button on the front of the Xbox.
-  \item Using the TV REMOTE, set the volume to about a third.
-  \item If you do not see a picture, press the AV button on the TV REMOTE.
-  \item After use, remove the XBOX VIDEO CABLE from the back of the Xbox.
-  \end{enumerate}
-
-  \section{To play the PlayStation}
-  \begin{enumerate}
-  \item Ensure that neither the XBOX POWER CABLE nor the VIDEO POWER CABLE are plugged in to the wall socket.
-  \item Ensure that the MULTI-WAY POWER CABLE is plugged into the wall socket.
-  \item Turn on the wall socket for the MULTI-WAY POWER CABLE.
-  \item Press the power button on the TV REMOTE.
-  \item Press the power button on the top of the PlayStation.
-  \item Using the TV REMOTE, set the volume to about a third.
-  \item If you do not see a picture, press the AV button on the TV REMOTE.
-  \end{enumerate}
-\end{multicols*}
 \end{document}
