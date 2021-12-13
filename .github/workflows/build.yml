@@ -18,8 +18,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Download LaTeX packages
         run: |
-          apt-get update
-          DEBIAN_FRONTEND=noninteractive apt-get install -y texlive wget
+          sudo apt-get update
+          DEBIAN_FRONTEND=noninteractive sudo apt-get install -y texlive wget
           wget https://mirrors.ctan.org/macros/latex/contrib/titlesec.zip
           unzip titlesec.zip
           mv titlesec/titlesec.sty ./
