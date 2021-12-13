@@ -6,6 +6,7 @@
 \usepackage{multicol}
 \usepackage{xcolor}
 \usepackage{geometry}
+\usepackage{enumitem}
 \usepackage[none]{hyphenat}
 \usepackage{titlesec}
 \date{December 2021}
@@ -28,7 +29,7 @@
 {\centering{\LARGE TV Instructions\par}}
 \begin{minipage}[t][0.42\textheight]{0.48\linewidth}
 \section{To watch a DVD}
-\begin{enumerate}
+\begin{enumerate}[leftmargin=15pt]
 \item Ensure that neither the XBOX POWER CABLE nor the VIDEO POWER CABLE are plugged in to the wall socket.
 \item Ensure that the MULTI-WAY POWER CABLE is plugged into the wall socket.
 \item Turn on the wall socket for the MULTI-WAY POWER CABLE.
@@ -39,9 +40,10 @@
 \item Using the DVD REMOTE, set the volume to full.
 \end{enumerate}
 \end{minipage}
+\hspace{18pt}
 \begin{minipage}[t][0.42\textheight]{0.48\linewidth}
 \section{To play the PlayStation}
-\begin{enumerate}
+\begin{enumerate}[leftmargin=15pt]
 \item Ensure that neither the XBOX POWER CABLE nor the VIDEO POWER CABLE are plugged in to the wall socket.
 \item Ensure that the MULTI-WAY POWER CABLE is plugged into the wall socket.
 \item Turn on the wall socket for the MULTI-WAY POWER CABLE.
@@ -54,7 +56,7 @@
 
 \begin{minipage}[t][0.49\textheight]{0.48\linewidth}
 \section{To play the Xbox}
-\begin{enumerate}
+\begin{enumerate}[leftmargin=15pt]
 \item Ensure that the VIDEO POWER CABLE is not plugged into the wall socket.
 \item Ensure that the MULTI-WAY POWER CABLE and the XBOX POWER CABLE are plugged into the wall socket.
 \item Turn on the wall socket for both the MULTI-WAY POWER CABLE and the XBOX POWER CABLE.
@@ -66,9 +68,10 @@
 \item After use, remove the XBOX VIDEO CABLE from the back of the Xbox.
 \end{enumerate}
 \end{minipage}
+\hspace{18pt}
 \begin{minipage}[t][0.49\textheight]{0.48\linewidth}
 \section{To watch a video}
-\begin{enumerate}
+\begin{enumerate}[leftmargin=15pt]
 \item Ensure that the XBOX POWER CABLE is not plugged into the wall socket.
 \item Ensure that the MULTI-WAY POWER CABLE and the VIDEO POWER CABLE are plugged into the wall socket.
 \item Turn on the wall socket for both the MULTI-WAY POWER CABLE and the VIDEO POWER CABLE.
