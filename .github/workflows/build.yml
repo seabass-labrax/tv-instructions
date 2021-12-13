@@ -1,0 +1,35 @@
+# SPDX-FileCopyrightText: 2021 Sebastian Crane <seabass-labrax@gmx.com>
+# SPDX-License-Identifier: 0BSD
+
+name: Build document PDF
+
+on:
+  push:
+    branches:
+      - master
+    pull_request:
+      - '**'
+
+jobs:
+  build:
+    name: Generate PDF
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download LaTeX packages
+        run: |
+          apt-get update
+          DEBIAN_FRONTEND=noninteractive apt-get install -y texlive wget
+          wget https://mirrors.ctan.org/macros/latex/contrib/titlesec.zip
+          unzip titlesec.zip
+          mv titlesec/titlesec.sty ./
+          wget https://mirrors.ctan.org/macros/latex/contrib/nopageno.zip
+          unzip nopageno.zip
+          mv nopageno/nopageno.sty ./
+      - name: Run `pdflatex`
+        run: pdflatex -interaction=nonstopmode src/instructions.latex
+      - name: Archive generated PDF
+        uses: actions/upload-artifact@v2
+        with:
+          name: tv-instructions
+          path: instructions.pdf
