@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2021 Sebastian Crane <seabass-labrax@gmx.com>
+# SPDX-License-Identifier: 0BSD
+
+name: Test REUSE compliance
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  reuse:
+    name: Test REUSE compliance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run `reuse lint`
+        uses: fsfe/reuse-action@v1
